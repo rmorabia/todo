@@ -1,38 +1,16 @@
 <!DOCTYPE html>
 <html>
-
   <head>
+    <title>Rainbow Todo List</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Radhika Morabia's Todo List App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-
   <body>
-    <h1>To-Do List</h1>
-    
-    <div>
-    <button onclick="handlers.toggleAll()">Toggle All</button>
-    </div>
-    
-    <div>
-    <button onclick="handlers.addTodo()">Add</button>
-    <input id="addTodoTextInput" type="text">
-    </div>
-    
-    <div>
-      <button onclick="handlers.changeTodo()">Change Todo</button>
-      <input id="changeTodoPositionInput" type="number">
-      <input id="changeTodoTextInput" type="text">
-    </div>
-    
-    <div>
-      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
-      <input id="toggleCompletedPositionInput" type="number">
-    </div>
-    
-    <ul>
-    </ul>
-    
+    <h1>Add Some Todos!</h1>
+    <form id="addTodo"><input id="addTodoText" placeholder="add a todo" maxlength="31" autocomplete="off" novalidate></form>
+    <footer>Built by <a href="http://rmorabia.com">Radhika Morabia</a>. <a href="http://github.com/rmorabia/todo">Source on Github.</a></footer>
     <script src="script.js"></script>
   </body>
-
 </html>
