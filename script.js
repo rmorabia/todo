@@ -51,7 +51,7 @@ function markAsDone () {
 function deleteButton () {
   var deleteButton = document.createElement('img')
   var deleteImg = document.createAttribute('src')
-  deleteImg.value = '/delete-icon.svg'
+  deleteImg.value = 'delete-icon.svg'
   deleteButton.setAttributeNode(deleteImg)
   newTodo.insertBefore(deleteButton, document.querySelector('.newTodo'))
   deleteButton.addEventListener('click', function (event) {
