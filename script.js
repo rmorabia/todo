@@ -4,7 +4,6 @@ var newTodo = 0
 var r = 0
 var g = 0
 var b = 0
-// var lines = document.querySelectorAll('.newTodo')
 var done = false
 
 function rgb () {
@@ -33,9 +32,6 @@ function displayTodos () {
   colors()
   markAsDone()
   deleteButton()
-  // newTodo.addEventListener('mouseover', function (){
-  //   deleteButton.style.display = "none"
-  // })
 }
 
 function markAsDone () {
@@ -53,15 +49,15 @@ function markAsDone () {
 }
 
 function deleteButton () {
-  var deleteButton = document.createElement('span')
-  deleteButton.innerHTML = '<button class="fas fa-minus-circle"></button>'
+  var deleteButton = document.createElement('img')
+  var deleteImg = document.createAttribute('src')
+  deleteImg.value = '/delete-icon.svg'
+  deleteButton.setAttributeNode(deleteImg)
   newTodo.insertBefore(deleteButton, document.querySelector('.newTodo'))
   deleteButton.addEventListener('click', function (event) {
     var target = event.target
     var parent = target.parentElement
-    var ultraParent = parent.parentElement
-    var doubleUltraParent = ultraParent.parentElement
-    doubleUltraParent.parentNode.removeChild(doubleUltraParent)
+    parent.parentNode.removeChild(parent)
   })
 }
 

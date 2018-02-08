@@ -57,11 +57,6 @@ html {
     font-family: 'Nova Flat', cursive;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 div,
 h1,
 form,
@@ -73,6 +68,12 @@ input {
     margin: 0;
     transition: all, .5s, ease;
     line-height: 10vw;
+}
+
+img {
+  float: right;
+  height: 10vw;
+  line-height: 10vw;
 }
 
 input,
@@ -105,13 +106,4 @@ a:hover,
 a:active {
     color: #32b643;
     text-decoration: underline;
-}
-
-span {
-  float: right;
-  padding: 0 10px;
-}
-
-.hover {
-  display: none;
 }
