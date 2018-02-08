@@ -107,3 +107,7 @@ a:active {
     color: #32b643;
     text-decoration: underline;
 }
+
+::placeholder {
+    color: #ffffff;
+  }
