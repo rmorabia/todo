@@ -110,4 +110,12 @@ a:active {
 
 ::placeholder {
     color: #ffffff;
-  }
+}
+
+.deleteButton {
+    display: none;
+}
+
+div:hover .deleteButton {
+    display: inline-block;
+}
