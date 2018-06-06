@@ -4,8 +4,8 @@ This is just another todo list app.
 
 I have written it in multiple languages & frameworks:
 
-- [Vanilla JS](http://rmorabia.com/todo) [(Source)](http://github.com/rmorabia/todo)
-- React [(Source)](https://github.com/rmorabia/todo/tree/react)
+- [React](http://rmorabia.com/todo) [(Source)](http://github.com/rmorabia/todo)
+- [Vanilla JS](http://rmorabia.com/todo) [(Source)](http://github.com/rmorabia/todo/tree/js)
 
 Features (across all versions) include:
 

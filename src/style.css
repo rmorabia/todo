@@ -1,0 +1,120 @@
+/*
+=================
+Full-Page Styling
+=================
+*/
+
+html {
+  min-height: 100%;
+  min-width: 100%;
+  font-family: 'Nova Flat', cursive;
+}
+
+/*
+============
+Spacing 
+============
+*/
+
+div,
+form,
+input,
+h1 {
+  height: 10vw;
+  font-size: 5vw;
+  color: #fff;
+  margin: 0;
+  transition: all .5s ease;
+  line-height: 10vw;
+}
+
+h1 {
+  padding: 0 10px;
+  font-weight: normal;
+}
+
+span {
+  padding: 0 10px;
+}
+
+input {
+  padding: 0 10px;
+}
+
+/*
+===================
+Input & Placeholder
+===================
+*/
+
+input,
+input:focus {
+  background-color: transparent;
+  border: none;
+  outline-width: 0;
+  box-sizing: border-box;
+  width: 90vw;
+  font-family: 'Nova Flat', cursive;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+/* 
+=============
+Delete Button
+=============
+*/
+
+img {
+  float: right;
+  height: 10vw;
+  line-height: 10vw;
+}
+
+/*
+======
+Footer
+======
+*/
+
+footer {
+  height: 10vw;
+  font-size: 4vw;
+  line-height: 10vw;
+  color: #32b643;
+  margin: 0;
+  background-color: #cbedd0;
+  text-align: center;
+}
+
+a {
+  color: #32b643;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #32b643;
+  text-decoration: underline;
+}
+
+/*
+===============
+Toggle in React
+===============
+*/
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.deleteButton {
+  display: none;
+}
+
+.todo:hover .deleteButton {
+  display: inline-block;
+}
