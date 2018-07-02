@@ -13,7 +13,11 @@
       autocomplete="off"
       :style="{ backgroundColor: changeFormColor }"
     >
-      <input name="todo" type="text" placeholder="Type your todos here...">
+      <input
+        name="todo"
+        type="text"
+        placeholder="Type your todos here..."
+      >
     </form>
     <footer>Built by Radhika Morabia.</footer>
   </div>
@@ -61,13 +65,20 @@ export default {
       return this.getRandomColor()
     }
   },
-  created: function () {
+  mounted: function () {
+    console.log(localStorage.getItem('todos'))
+    console.log(this.todos)
     if (localStorage.getItem('todos')) {
       this.todos = JSON.parse(localStorage.getItem('todos'))
     }
   },
-  updated: function () {
-    localStorage.setItem('todos', JSON.stringify(this.todos))
+  watch: {
+    todos: {
+      handler: function (todos) {
+        localStorage.setItem('todos', JSON.stringify(this.todos))
+      },
+      deep: true
+    }
   }
 }
 </script>
